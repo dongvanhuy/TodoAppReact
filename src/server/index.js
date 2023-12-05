@@ -13,7 +13,7 @@ export const setupServer = () => {
       this.post("/api/todo", (schema, request) => {
         const payload = JSON.parse(request.requestBody);
         const database = schema.todo.create(payload);
-        console.log(database);
+  
         return schema.todo.create(payload);
       });
 
